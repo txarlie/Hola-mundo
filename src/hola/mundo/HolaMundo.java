@@ -5,6 +5,14 @@
  */
 package hola.mundo;
 
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+
+
 /**
  *
  * @author 2dama
@@ -17,13 +25,33 @@ public class HolaMundo {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        JFrame ventana = new JFrame();
+        ventana.setVisible(true);
+
+/**
+ * Creacion de los objetos necesarios que vamos a usar en la ventana.
+ */
+        JLabel etiqueta = new JLabel("OESTE");
+        JLabel etiqueta1 = new JLabel("ESTE");
+        JButton boton = new JButton("NORTE");
+        JButton boton1 = new JButton("SUR");
+        JTextField texto = new JTextField("¡HOLA MUNDO!");
         
-        System.out.println("¡Hola mundo!");
-        System.out.println("¡Adios!");
-        System.out.println("pedro");
-        System.out.println("¡Hola mundo!");
-        System.out.println("¡Adios!");
-        System.out.println("pedro");
+        /**
+         * Distribucion de la interfaz.
+         */
+        ventana.getContentPane().add(boton, BorderLayout.NORTH);
+        ventana.getContentPane().add(boton1, BorderLayout.SOUTH);
+        ventana.getContentPane().add(etiqueta, BorderLayout.WEST);
+        ventana.getContentPane().add(etiqueta1, BorderLayout.EAST);
+        ventana.getContentPane().add(texto, BorderLayout.CENTER);
+        ventana.pack();
+        
+        /**
+         * Esta opcion cierra el proceso de la venta al darle a EXIT.
+         */
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
     
 }
