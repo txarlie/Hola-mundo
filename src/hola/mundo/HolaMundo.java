@@ -21,6 +21,9 @@ public class HolaMundo {
         System.out.println("¡Hola mundo!");
         System.out.println("¡Adios!");
         System.out.println("pedro");
+        System.out.println("¡Hola mundo!");
+        System.out.println("¡Adios!");
+        System.out.println("pedro");
     }
     
 }
