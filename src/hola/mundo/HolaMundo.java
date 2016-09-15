@@ -27,7 +27,11 @@ public class HolaMundo {
         
         JFrame ventana = new JFrame();
         ventana.setVisible(true);
-
+        /**
+         * Con esta opcion impedimos que el usuario modifique
+         * el tamaño de la ventana
+         */
+        ventana.setResizable(false);
 /**
  * Creacion de los objetos necesarios que vamos a usar en la ventana.
  */
